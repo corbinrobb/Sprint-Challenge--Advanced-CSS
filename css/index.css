@@ -175,6 +175,7 @@ p {
   position: fixed;
   width: 100%;
   z-index: 99;
+  height: 10rem;
 }
 @media (max-width: 500px) {
   .nav-bar {
@@ -214,7 +215,12 @@ footer {
 }
 .home {
   position: relative;
-  top: 11rem;
+  top: 10rem;
+}
+@media (max-width: 500px) {
+  .home {
+    top: 10rem;
+  }
 }
 .home .intro img {
   border-radius: 5px;
