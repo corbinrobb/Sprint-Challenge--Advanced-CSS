@@ -12,12 +12,17 @@
   flex-direction: @dir;
 }
 
-.btn(@bg, @size, @font-size) {
+.btn(@bg, @size, @font-color) {
   width: @size;
   background-color: @bg;
-  font-size: @font-size;
+  font-size: 1.8rem;
   padding: 2% 0;
-  color: white;
+  color: @font-color;
   font-family: 'Ubuntu', sans-serif;
   border-radius: 0.5rem;
+
+  &:hover {
+    background-color:@font-color;
+    color: @bg;
+  }
 }

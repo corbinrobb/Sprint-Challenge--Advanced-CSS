@@ -283,6 +283,10 @@ footer {
   font-family: 'Ubuntu', sans-serif;
   border-radius: 0.5rem;
 }
+.home .walk .walk-text .btn:hover {
+  background-color: white;
+  color: #22283A;
+}
 @media (max-width: 500px) {
   .home .walk .walk-text .btn {
     width: 100%;
