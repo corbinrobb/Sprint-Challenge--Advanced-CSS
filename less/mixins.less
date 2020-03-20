@@ -1,1 +1,23 @@
 // Mixins Here
+
+.flex-column() {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex(@just, @align, @dir) {
+  display: flex;
+  justify-content: @just;
+  align-items: @align;
+  flex-direction: @dir;
+}
+
+.btn(@bg, @size, @font-size) {
+  width: @size;
+  background-color: @bg;
+  font-size: @font-size;
+  padding: 2% 0;
+  color: white;
+  font-family: 'Ubuntu', sans-serif;
+  border-radius: 0.5rem;
+}
