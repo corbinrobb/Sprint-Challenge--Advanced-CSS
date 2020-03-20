@@ -170,8 +170,11 @@ p {
   align-items: center;
   flex-direction: column;
   padding: 1% 1% 0.5%;
-  background-color: #F6F6F6;
+  background-color: rgba(246, 246, 246, 0.9);
   border: 1px solid #F1F1F1;
+  position: fixed;
+  width: 100%;
+  z-index: 99;
 }
 @media (max-width: 500px) {
   .nav-bar {
@@ -186,6 +189,7 @@ p {
   justify-content: center;
   align-items: center;
   flex-direction: row;
+  opacity: 100%;
 }
 .nav-bar nav a {
   text-decoration: none;
@@ -207,6 +211,10 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.home {
+  position: relative;
+  top: 11rem;
 }
 .home .intro img {
   border-radius: 5px;

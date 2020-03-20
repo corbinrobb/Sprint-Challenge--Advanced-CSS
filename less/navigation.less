@@ -3,6 +3,9 @@
   padding: 1% 1% 0.5%;
   background-color: @nav-bg;
   border: 1px solid @nav-border;
+  position: fixed;
+  width: 100%;
+  z-index: 99;
 
   @media @phone {
     padding-top: 2%;
@@ -13,6 +16,7 @@
     font-size: 1.6rem;
     margin-top: 0.5%;
     .flex(center, center, row);
+    opacity: 100%;
 
     a {
       text-decoration: none;
@@ -23,6 +27,6 @@
       @media @phone {
         margin: 2% 3% 1%;
       }
-    }
-  }
-}
+    } // a
+  } // nav
+} // .nav-bar
