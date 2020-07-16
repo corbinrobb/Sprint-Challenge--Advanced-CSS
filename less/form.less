@@ -1,0 +1,41 @@
+.form-page {
+  min-height: 91vh;
+  .flex(space-between, stretch, column);
+  
+  .sign-up-form {
+    .flex(space-around , center, column);
+    font-size: 3rem;
+    padding: 10% 0 20%;
+
+    fieldset {
+      .flex(space-around, stretch, column);
+      
+      legend {
+        margin: 20% 0;
+        font-size: 3rem;
+
+        @media @phone {
+          text-align: center;
+        }
+      }
+
+      .submit{
+       background-color: @btn-bg-color;
+       padding: 4%;
+       color: white;
+       font: 2rem 'Russo One', sans-serif;
+       border-radius: 1rem;
+      }
+
+      & > * {
+        width: 100%;
+        margin-top: 2%;
+      }
+
+      @media @phone {
+        padding: 0 5%;
+        font-size: 1.6rem;
+      }
+    } // fieldset 
+  } // .sign-up-form
+} // .form-page
